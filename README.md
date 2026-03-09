@@ -43,7 +43,7 @@ Menyimpan data unit sekolah yang berinduk ke suatu yayasan.
 - `id` (Primary Key)
 - `yayasan_id` (Foreign Key) - Mengarah ke `id` pada tabel `yayasans`.
 - `nama_sekolah` (String) - Nama unit sekolah.
-- `tingkat_pendidikan` (String) - Jenjang (contoh: SD, SMP, SMA).
+- `jenjang_pendidikan` (String) - Jenjang (contoh: SD, SMP, SMA).
 - `alamat` (Text) - Alamat fisik sekolah.
 - `created_at` & `updated_at` (Timestamp)
 
@@ -58,7 +58,7 @@ Sistem ini menggunakan **One-to-Many Relationship**:
 ## ERD (Entity Relationship Diagram)
 
 ```mermaid
-ERDiagram
+erDiagram
     YAYASAN ||--o{ SEKOLAH : "memiliki"
     
     YAYASAN {
