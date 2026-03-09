@@ -73,7 +73,7 @@ erDiagram
         bigint id PK
         bigint yayasan_id FK
         string nama_sekolah
-        string tingkat_pendidikan
+        string jenjang_pendidikan
         text alamat
         timestamp created_at
         timestamp updated_at
