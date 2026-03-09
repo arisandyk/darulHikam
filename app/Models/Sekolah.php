@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Sekolah extends Model
+{
+    protected $guarded = ['id'];
+    public function yayasan()
+    {
+        return $this->belongsTo(Yayasan::class);
+    }
+}
